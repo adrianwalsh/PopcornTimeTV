@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07663F0F7E6EA00F009CBEC4 /* Pods_PopcornTimeiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0CE0698654DD9438A6CFB2 /* Pods_PopcornTimeiOS.framework */; };
 		0FC1E96F32C9524682B959F4 /* Pods_PopcornKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA80370986F9AFED490AD537 /* Pods_PopcornKit_iOS.framework */; };
+		3A3E9FD427DDEBFC00E754E6 /* iOSPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D32EBD51EA2D0F500B4361A /* iOSPlist.strings */; };
 		4AE98B91F909C34BCD60A851 /* Pods_PopcornTimetvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D92693A60D32B7994D9285D /* Pods_PopcornTimetvOS.framework */; };
 		4D0183A91DC3ACB500AB75B3 /* Locale+Langs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0183A81DC3ACB400AB75B3 /* Locale+Langs.swift */; };
 		4D07E17C1E8C364F00457FCB /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07E17B1E8C364F00457FCB /* Object.swift */; };
@@ -351,7 +352,6 @@
 		D91B3A5321A5A8990076B083 /* ExtendedSubtitleSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B3A5221A5A8980076B083 /* ExtendedSubtitleSelectionTableViewController.swift */; };
 		D91B3A5521A5A8E80076B083 /* ExtendedSubtitleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B3A5421A5A8E80076B083 /* ExtendedSubtitleTableViewController.swift */; };
 		D92610A020F4B13A00BA8C44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D926109E20F4B13A00BA8C44 /* InfoPlist.strings */; };
-		D92610A320F4B13A00BA8C44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D92610A120F4B13A00BA8C44 /* InfoPlist.strings */; };
 		D946964720476B7200B4A63B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D946964920476B7200B4A63B /* Localizable.strings */; };
 		D95647DE206D8B810027E615 /* SubtitleHashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AAC99206C2F3C003DA002 /* SubtitleHashGenerator.swift */; };
 		D95647DF206D8B820027E615 /* SubtitleHashGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AAC99206C2F3C003DA002 /* SubtitleHashGenerator.swift */; };
@@ -1952,8 +1952,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3E9FD427DDEBFC00E754E6 /* iOSPlist.strings in Resources */,
 				4DC2D1331E59FE290019DB7D /* ContinueWatchingCollectionViewCell.xib in Resources */,
-				D92610A320F4B13A00BA8C44 /* InfoPlist.strings in Resources */,
 				4D689A361DD8906F001D1318 /* Images.xcassets in Resources */,
 				4D0F9E321E7059C000860852 /* ContinueWatchingCollectionReusableView.xib in Resources */,
 				4D859B771DDFA12C000E2AA1 /* ErrorBackgroundView.xib in Resources */,

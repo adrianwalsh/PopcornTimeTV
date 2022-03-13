@@ -64,7 +64,8 @@ extension AppDelegate: PCTPlayerViewControllerDelegate, UIViewControllerTransiti
         var nextEpisode: Episode?
         
         let loadingViewController = storyboard.instantiateViewController(withIdentifier: "PreloadTorrentViewController") as! PreloadTorrentViewController
-        loadingViewController.transitioningDelegate = self
+        /// Disable broken animation for now
+//        loadingViewController.transitioningDelegate = self
         loadingViewController.loadView()
         
         let backgroundImage: String?
@@ -108,6 +109,7 @@ extension AppDelegate: PCTPlayerViewControllerDelegate, UIViewControllerTransiti
             UIApplication.shared.isIdleTimerDisabled = false
             let flag = UIDevice.current.userInterfaceIdiom != .tv
             self.dismiss(animated: flag) {
+                playerVc.modalPresentationStyle = .fullScreen
                 self.present(playerVc, animated: flag)
             }
         }
