@@ -9,7 +9,7 @@ protocol CellCustomizing {
     func configureCellWith<T>(_ item: T)
 }
 
-protocol CollectionViewControllerDelegate: class {
+protocol CollectionViewControllerDelegate: AnyObject {
     func load(page: Int)
     func didRefresh(collectionView: UICollectionView)
     func collectionView(isEmptyForUnknownReason collectionView: UICollectionView)

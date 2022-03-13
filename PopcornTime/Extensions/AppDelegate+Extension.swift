@@ -7,7 +7,7 @@ import MediaPlayer.MPMediaItem
 
 extension AppDelegate: PCTPlayerViewControllerDelegate, UIViewControllerTransitioningDelegate {
     
-    func chooseQuality(_ sender: UIView?, media: Media, completion: @escaping (Torrent) -> Void) {
+    func chooseQuality(_ sender: UIView?, media: Media, controller: UIViewController? = nil, completion: @escaping (Torrent) -> Void) {
         if let quality = UserDefaults.standard.string(forKey: "autoSelectQuality") {
             let sorted  = media.torrents.sorted(by: <)
             let torrent = quality == "Highest".localized ? sorted.last! : sorted.first!
@@ -42,7 +42,11 @@ extension AppDelegate: PCTPlayerViewControllerDelegate, UIViewControllerTransiti
         
         alertController.popoverPresentationController?.sourceView = sender
         
-        alertController.show(animated: true)
+        if let controller = controller {
+            controller.present(alertController, animated: true)
+        } else {
+            alertController.show(animated: true)
+        }
     }
     
     func play(_ media: Media, torrent: Torrent) {

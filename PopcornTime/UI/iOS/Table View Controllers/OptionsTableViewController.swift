@@ -3,7 +3,7 @@
 import UIKit
 import struct PopcornKit.Subtitle
 
-protocol OptionsViewControllerDelegate: class {
+protocol OptionsViewControllerDelegate: AnyObject {
     func didSelectSubtitle(_ subtitle: Subtitle?)
     func didSelectSubtitleDelay(_ delay: Int)
     func didSelectEncoding(_ encoding: String)

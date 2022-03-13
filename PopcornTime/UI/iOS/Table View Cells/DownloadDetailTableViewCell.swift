@@ -2,7 +2,7 @@
 
 import Foundation
 
-protocol DownloadDetailTableViewCellDelegate: class {
+protocol DownloadDetailTableViewCellDelegate: AnyObject {
     func cell(_ cell: DownloadDetailTableViewCell, accessoryButtonPressed button: DownloadButton)
     func cell(_ cell: DownloadDetailTableViewCell, longPressDetected gesture: UILongPressGestureRecognizer)
 }

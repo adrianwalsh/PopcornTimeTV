@@ -6,7 +6,7 @@ import PopcornTorrent
 import PopcornKit
 
 
-protocol PCTPlayerViewControllerDelegate: class {
+protocol PCTPlayerViewControllerDelegate: AnyObject {
     func playNext(_ episode: Episode)
     
     #if os(iOS)

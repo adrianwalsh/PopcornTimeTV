@@ -112,7 +112,7 @@ class EpisodeDetailViewController: UIViewController, UIScrollViewDelegate, UIGes
     }
     
     @IBAction func play(_ sender: UIView) {
-        AppDelegate.shared.chooseQuality(sender, media: episode) { [unowned self] (torrent) in
+        AppDelegate.shared.chooseQuality(sender, media: episode, controller: self) { [unowned self] (torrent) in
             self.dismiss(animated: false)
             AppDelegate.shared.play(self.episode, torrent: torrent)
         }

@@ -7,7 +7,7 @@ import SwiftyTimer
     import MBCircularProgressBar
 #endif
 
-protocol UpNextViewControllerDelegate: class {
+protocol UpNextViewControllerDelegate: AnyObject {
     func viewController(_ viewController: UpNextViewController, proceedToNextVideo proceed: Bool)
 }
 

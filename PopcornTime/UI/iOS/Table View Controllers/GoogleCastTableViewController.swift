@@ -4,7 +4,7 @@ import UIKit
 import GoogleCast
 import PopcornKit
 
-protocol GoogleCastTableViewControllerDelegate: class {
+protocol GoogleCastTableViewControllerDelegate: AnyObject {
     func didConnectToDevice()
 }
 
