@@ -125,7 +125,8 @@ class EpisodeDetailViewController: UIViewController, UIScrollViewDelegate, UIGes
     
     @IBAction func download(_ sender: DownloadButton) {
         if sender.downloadState == .normal {
-            AppDelegate.shared.chooseQuality(sender, media: episode) { [unowned self] (torrent) in
+            weak var selfController = self
+            AppDelegate.shared.chooseQuality(sender, media: episode, controller: selfController) { [unowned self] (torrent) in
                 PTTorrentDownloadManager.shared().startDownloading(fromFileOrMagnetLink: torrent.url, mediaMetadata: self.episode.mediaItemDictionary)
                 
                 sender.downloadState = .pending

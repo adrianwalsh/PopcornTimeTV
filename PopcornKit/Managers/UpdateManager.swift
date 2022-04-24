@@ -135,7 +135,7 @@ internal class VersionString: NSObject, NSCoding {
         self.date = {
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-            return formatter.date(from: dateString)!
+            return formatter.date(from: dateString) ?? Date()
         }()
         
         let components = string.components(separatedBy: ".")
